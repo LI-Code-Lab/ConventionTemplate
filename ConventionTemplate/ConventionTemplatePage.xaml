@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:ConventionTemplate; assembly=ConventionTemplate" 
+    x:Class="ConventionTemplate.ConventionTemplatePage"
+    Title="Dashboard">
+
+  <!--  <ListView x:Name="PanelList" HasUnevenRows="true">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{local:EmbeddedImage ConventionTemplate.Images.background.jpg}"/>
+                        <StackLayout Orientation="Vertical" Padding="10" VerticalOptions="Center">
+                            <Label Text="{Binding name}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding description}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding notes}" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView> -->
+
+    <Image x:Name="image" Source="https://en.wikipedia.org/wiki/Homer_Simpson#/media/File:Homer_Simpson_2006.png"/>
+</ContentPage>
