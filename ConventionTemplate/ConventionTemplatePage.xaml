@@ -10,12 +10,13 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout Orientation="Horizontal">
-                        <Image Source="{local:EmbeddedImage ConventionTemplate.Images.background.jpg}"/>
-                        <StackLayout Orientation="Vertical" Padding="10" VerticalOptions="Center">
-                            <Label Text="{Binding name}" HorizontalOptions="Center"/>
+                    <!-- Margin="start, end, top, bottom"-->
+                    <StackLayout Orientation="Horizontal" Margin="8, 8, 4, 4" HeightRequest="200">
+                        <Image Source="{local:EmbeddedImage ConventionTemplate.Images.background.jpg}" WidthRequest="125" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                        <StackLayout Orientation="Vertical" Padding="8" VerticalOptions="Start">
+                            <Label Text="{Binding name}" HorizontalOptions="Center" FontSize="18" />
                             <Label Text="{Binding description}" HorizontalOptions="Center"/>
-                            <Label Text="{Binding notes}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding notes}" HorizontalOptions="Start"/>
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>
