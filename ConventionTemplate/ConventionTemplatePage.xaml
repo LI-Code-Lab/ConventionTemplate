@@ -6,7 +6,7 @@
     x:Class="ConventionTemplate.ConventionTemplatePage"
     Title="Dashboard">
 
-  <!--  <ListView x:Name="PanelList" HasUnevenRows="true">
+    <ListView x:Name="PanelList" HasUnevenRows="true">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -21,7 +21,7 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
-    </ListView> -->
+    </ListView>
 
-    <Image x:Name="image" Source="https://en.wikipedia.org/wiki/Homer_Simpson#/media/File:Homer_Simpson_2006.png"/>
+   <!-- <Image x:Name="image" Source="https://en.wikipedia.org/wiki/Homer_Simpson#/media/File:Homer_Simpson_2006.png"/> -->
 </ContentPage>

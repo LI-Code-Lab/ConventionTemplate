@@ -30,6 +30,7 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="ConventionTemplatePage.xaml" />
+    <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -55,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
