@@ -23,6 +23,7 @@ namespace ConventionTemplate.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+            Window.SetStatusBarColor(Android.Graphics.Color.Black);
         }
     }
 }

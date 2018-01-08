@@ -4,17 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:ConventionTemplate; assembly=ConventionTemplate" 
     x:Class="ConventionTemplate.ConventionTemplatePage"
-    Title="Dashboard">
+    Title="Panel"
+    BackgroundColor="#DDDDDD">
 
-    <ListView x:Name="PanelList" HasUnevenRows="true">
-        <ListView.ItemTemplate>
+    <StackLayout Orientation="Vertical" Margin="8" BackgroundColor="White">
+        <Label Text="Featured Guests" HorizontalOptions="Start" Margin="8, 16, 8, 0" FontSize="16"/>
+        <ListView x:Name="PanelList" HasUnevenRows="true">
+        <ListView.ItemTemplate >
             <DataTemplate>
                 <ViewCell>
-                    <!-- Margin="start, end, top, bottom"-->
-                    <!-- Padding="start,top,end,bottom-->
+                    <!-- Padding&Maring="start,top,end,bottom-->
                     <StackLayout Orientation="Horizontal" Margin="8, 8, 8, 8" HeightRequest="200">
                         <Image Source="{local:EmbeddedImage ConventionTemplate.Images.tomholland.jpg}" WidthRequest="125" Aspect="AspectFill"/>
-                        <StackLayout Orientation="Vertical" Padding="8, 4, 0, 8 " VerticalOptions="Start">
+                        <StackLayout Orientation="Vertical" Padding="8, 4, 0, 40 " VerticalOptions="Start">
                             <Label Text="{Binding name}" HorizontalOptions="Center" FontSize="16" />
                             <Label Text="{Binding description}" HorizontalOptions="Center" FontSize="14"/>
                             <Label Text="{Binding notes}" HorizontalOptions="Start" FontSize="10"/>
@@ -24,6 +26,5 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
-   <!-- <Image x:Name="image" Source="https://en.wikipedia.org/wiki/Homer_Simpson#/media/File:Homer_Simpson_2006.png"/> -->
+    </StackLayout>
 </ContentPage>
