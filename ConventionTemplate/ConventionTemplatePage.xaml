@@ -11,12 +11,13 @@
             <DataTemplate>
                 <ViewCell>
                     <!-- Margin="start, end, top, bottom"-->
-                    <StackLayout Orientation="Horizontal" Margin="8, 8, 4, 4" HeightRequest="200">
-                        <Image Source="{local:EmbeddedImage ConventionTemplate.Images.background.jpg}" WidthRequest="125" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
-                        <StackLayout Orientation="Vertical" Padding="8" VerticalOptions="Start">
-                            <Label Text="{Binding name}" HorizontalOptions="Center" FontSize="18" />
-                            <Label Text="{Binding description}" HorizontalOptions="Center"/>
-                            <Label Text="{Binding notes}" HorizontalOptions="Start"/>
+                    <!-- Padding="start,top,end,bottom-->
+                    <StackLayout Orientation="Horizontal" Margin="8, 8, 8, 8" HeightRequest="200">
+                        <Image Source="{local:EmbeddedImage ConventionTemplate.Images.tomholland.jpg}" WidthRequest="125" Aspect="AspectFill"/>
+                        <StackLayout Orientation="Vertical" Padding="8, 4, 0, 8 " VerticalOptions="Start">
+                            <Label Text="{Binding name}" HorizontalOptions="Center" FontSize="16" />
+                            <Label Text="{Binding description}" HorizontalOptions="Center" FontSize="14"/>
+                            <Label Text="{Binding notes}" HorizontalOptions="Start" FontSize="10"/>
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>
